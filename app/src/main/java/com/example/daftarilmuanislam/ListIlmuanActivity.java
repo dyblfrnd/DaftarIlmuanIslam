@@ -77,12 +77,12 @@ String[] url = {"https://id.wikipedia.org/wiki/Mu%E1%B8%A5ammad_bin_M%C5%ABs%C4%
     class CustomListViewAdapter extends BaseAdapter{
         @Override
         public int getCount() {
-            return 0;
+            return gambar.length;
         }
 
         @Override
         public Object getItem(int i) {
-            return gambar.length;
+            return null;
         }
 
         @Override
@@ -99,7 +99,7 @@ String[] url = {"https://id.wikipedia.org/wiki/Mu%E1%B8%A5ammad_bin_M%C5%ABs%C4%
 
                     imageView.setImageResource(gambar[i]);
                     textView.setText(nama[i]);
-            return null;
+            return view;
         }
     }
 }
